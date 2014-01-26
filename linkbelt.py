@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 import json
 import requests
 from flask import Flask, request, render_template
@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+	# get arguments
 	long_url = request.args.get('url', 'http://google.com')
 	# url to goo.gl service
 	url = 'https://www.googleapis.com/urlshortener/v1/url'
@@ -20,6 +21,7 @@ def index():
 	data = r.json()
 	# pass long_url and short_url to index.html
 	return render_template('index.html', long_url=long_url, short_url=data['id'])
+
 
 if __name__ == '__main__':
 	app.run()
