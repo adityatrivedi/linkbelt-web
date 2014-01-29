@@ -8,8 +8,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+	
+	# set http://google.com as default URL to shorten
 	# get long url from user
 	long_url = request.args.get('url', 'http://google.com')
+	# set goo.gl as default service
 	# get service type from user
 	service = request.args.get('service', 1, type=int)
 	short_url = ''
