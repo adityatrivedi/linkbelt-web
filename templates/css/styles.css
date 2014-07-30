@@ -6,13 +6,16 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #384047;
 }
 
 h1 {
   font-weight: lighter;
   margin: 0 0 30px 0;
   text-align: center;
+}
+
+.form-title {
+  color: white;
 }
 
 form {
