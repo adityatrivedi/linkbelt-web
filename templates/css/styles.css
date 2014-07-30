@@ -18,14 +18,18 @@ h1 {
   color: white;
 }
 
+/* form */
+
 form {
   color: white;
   max-width:300px;
   margin: 10px auto;
   padding: 10px 20px;
   background: #2980b9;
-  border-radius: 8px;
+  border-radius: 5px;
 }
+
+/* form controls */
 
 input[type="text"] {
   border: none;
@@ -37,5 +41,20 @@ input[type="text"] {
   width: 100%;
   background-color: #ecf0f1;
   color: #2c3e50;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: white;
+  background-color: #1abc9c;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
