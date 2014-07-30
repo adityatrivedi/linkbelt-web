@@ -45,6 +45,22 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+::-webkit-input-placeholder {
+   font-weight: 100;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-weight: 100;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-weight: 100;
+}
+
+:-ms-input-placeholder {  
+   font-weight: 100;
+}
+
 button {
   padding: 19px 39px 18px 39px;
   color: white;
