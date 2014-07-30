@@ -15,3 +15,11 @@ h1 {
   text-align: center;
 }
 
+form {
+  color: white;
+  max-width:300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #2980b9;
+  border-radius: 8px;
+}
