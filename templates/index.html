@@ -1,2 +1,29 @@
-<h1>Long URL: <a href="{{ long_url }}">{{ long_url }}</a></h1>
-<h1>Short URL: <a href="{{ short_url }}">{{ short_url }}</a></h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="linkbelt web application">
+        <meta name="author" content="Aditya Trivedi">
+        <title>Linkbelt</title>  
+        <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    
+    <form>
+      
+      <h1 class="form-title">Linkbelt</h1>
+      
+      <input type="text" id="text_field" name="short_url" placeholder="full link"/>
+      <input type="text" id="text_field" name="long_url" placeholder="short url"/>
+      <button type="submit">process</button>
+          
+    </form>
+    
+<!--    <h1>Long URL: <a href="{{ long_url }}">{{ long_url }}</a></h1>
+    <h1>Short URL: <a href="{{ short_url }}">{{ short_url }}</a></h1>      -->
+      
+    </body>
+</html>
